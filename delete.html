@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<style>
+		
+	 
+	#mainall{
+			border-radius: 20px;
+	    	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+	    	position:relative;
+		    color: white;
+		    padding:auto;
+		    background-image: url('image/background.png');
+		    max-width: 600px;
+		    height: 500px;
+
+		}
+
+	body{
+		background-color: #162447;
+		margin: 100px;
+		margin-top: 150px;
+		background-size: 150px;
+
+	}
+
+	#formside{
+		padding: 50px;
+	}
+	input[type=submit]{
+		margin-top: 10px;
+		margin-left: 100px;
+		background-color: #4CAF50
+  		color: white;
+  		border: none;
+  		text-decoration: none;
+
+	}
+	#notice{
+		margin-left: 15px;
+		margin-bottom: 40px;
+		color: red;
+	}
+
+	</style>
+</head>
+<body>
+		
+
+	<div class="container" id="mainall">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="delete.html">Delete Form</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href='index.html'>Create</a></li>
+					<li><a href='read.php'>Read</a></li>	
+					<li><a href='update.html'>Update</a></li>	
+					<li class="active"><a href='delete.html'>Delete</a></li>	
+				</ul>
+			</div>
+		</nav>
+		<div class="col-auto" id='formside'>
+			<form action="delete.php" method="get">
+				<h4 id="notice">Write the email of Account you want to delete</h4>
+				<div class="form-group col-sm-10">
+					<label for="email">Email</label>
+					<input type="text" class="form-control" name="email" aria-describedby="presentHelp" placeholder="Email"  />
+				</div>
+
+			
+
+				<div class="form-group col-sm-5" id="submit_but">
+					<input type="submit" class="form-control" name="submit" aria-describedby="presentHelp" placeholder="submit" value="Submit" />
+					
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>
